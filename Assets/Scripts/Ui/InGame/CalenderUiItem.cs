@@ -25,7 +25,11 @@ namespace BS.Ui
         #region Public Methods
         public void Init()
         {
-
+            Activity(true);
+        }
+        public void Activity(bool pActivity)
+        {
+            gameObject.SetActive(pActivity);
         }
         #endregion
     }
