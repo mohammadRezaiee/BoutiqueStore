@@ -101,6 +101,30 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -130,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d84df2147d36d9844a83c871b123fbf1
-      internalID: -1719389503
+      spriteID: e8bb4124d6c770441b9d74730d96b136
+      internalID: -1592605946
       vertices: []
       indices: 
       edges: []
@@ -151,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c999b4f0778d51d42b9bcc10a2a5c942
-      internalID: 1023146147
+      spriteID: dd109fde893ef2c4ab6eb31971c40be8
+      internalID: 1320318780
       vertices: []
       indices: 
       edges: []
@@ -172,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0fd7665e9d966c45834b970c1bfc8d2
-      internalID: -1894164151
+      spriteID: 6bb6f27d134792d4c85de1029c867492
+      internalID: 731892426
       vertices: []
       indices: 
       edges: []
@@ -193,8 +217,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cde9ceb0254cde4c9ab7d86e533315c
-      internalID: -370565830
+      spriteID: 9b7e623f4e06fb342a354f64222b0aac
+      internalID: 308857793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building Walls_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 80
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d199a701b3e70d4a929cd33663807e6
+      internalID: -1934312568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building Walls_5
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 80
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d414b4556554d74cb7ba9697bd1f4a4
+      internalID: 2038457822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building Walls_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 80
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cba713eea72fc14bae6cb5a1a29271c
+      internalID: 818842820
       vertices: []
       indices: 
       edges: []
@@ -210,10 +297,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Building Walls_1: 1023146147
-      Building Walls_3: -370565830
-      Building Walls_0: -1719389503
-      Building Walls_2: -1894164151
+      Building Walls_1: 1320318780
+      Building Walls_3: 308857793
+      Building Walls_6: 818842820
+      Building Walls_0: -1592605946
+      Building Walls_4: -1934312568
+      Building Walls_5: 2038457822
+      Building Walls_2: 731892426
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

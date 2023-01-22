@@ -11,6 +11,19 @@ namespace BS.Manager
         #endregion
 
         #region Public Props
+        public UserDataManager userDataManager
+        {
+            get
+            {
+                if(_userDataManager == null)
+                {
+                    _userDataManager = new UserDataManager(this);
+                    _userDataManager.Init();
+                }
+
+                return _userDataManager;
+            }
+        }
         public UiManager uiManager
         {
             get
@@ -24,6 +37,19 @@ namespace BS.Manager
                 return _uiManager;
             }
         }
+       public CursorManager cursorManager
+        {
+            get
+            {
+                if (_cursorManager == null) 
+                {
+                    _cursorManager = new CursorManager(this);
+                    _cursorManager.Init();
+                }
+
+                return _cursorManager;
+            }
+        }
         public DatabaseManager databaseManger => _databaseManager;
         #endregion
 
@@ -33,7 +59,9 @@ namespace BS.Manager
         #endregion
 
         #region Private Props
+        private UserDataManager _userDataManager { get; set; } = null;
         private UiManager _uiManager { get; set; } = null;
+        private CursorManager _cursorManager { get; set; } = null;
         #endregion
 
         #region Unity Methods

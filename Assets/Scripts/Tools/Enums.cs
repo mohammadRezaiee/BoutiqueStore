@@ -2,39 +2,70 @@ using System;
 
 namespace BS.Tools
 {
-    public class Enums
+    public enum ETimeType
     {
-        public enum ETimeType
-        {
-            AM,
-            PM
-        }
+        AM,
+        PM
+    }
 
-        public enum ESeasonType
-        {
-            Spring,
-            Summer,
-            Fall,
-            Winter
-        }
+    public enum ESeasonType
+    {
+        Spring,
+        Summer,
+        Fall,
+        Winter
+    }
 
-        public enum EWeeKday
-        {
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
-        }
+    public enum EWeeKday
+    {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
 
-        public enum EWeatherType
-        {
-            Sunny,
-            Cloudy,
-            Rainy,
-            Snowing
-        }
+    public enum EWeatherType
+    {
+        Sunny,
+        Cloudy,
+        Rainy,
+        Snowing
+    }
+
+    public enum EDoorType
+    {
+        TopToBottom,
+        BottomToTop,
+        LeftToRight,
+        RightToLeft
+    }
+    public enum ECursorType
+    {
+        Hover,
+        Default
+    }
+    public enum EClothType
+    {
+        Shoe,
+        Hat,
+        Pants,
+        Shirt,
+        Fantasy
+    }
+    public enum EClothSeasonType
+    {
+        Spring,
+        Summer,
+        Fall,
+        Winter,
+        All
+    }
+    public enum EGenderType
+    {
+        Man,
+        Woman
     }
 }

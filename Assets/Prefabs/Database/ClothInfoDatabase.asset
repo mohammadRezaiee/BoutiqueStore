@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f223ef77fbbfb324ea8f3a0803b5e5ea, type: 3}
+  m_Name: ClothInfoDatabase
+  m_EditorClassIdentifier: 
+  <clothInfoDataList>k__BackingField:
+  - <seasonType>k__BackingField: 0
+    <seasonName>k__BackingField: spring
+    <clothList>k__BackingField: []

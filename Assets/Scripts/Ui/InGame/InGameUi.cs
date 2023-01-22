@@ -32,6 +32,18 @@ namespace BS.Ui
                 return _walletUiItem;
             }
         }
+        public GeneralButtonsUi generalButtonsUi
+        {
+            get
+            {
+                if(_generalButtonsUi == null)
+                {
+                    _generalButtonsUi = GetComponentInChildren<GeneralButtonsUi>(true);
+                }
+
+                return _generalButtonsUi;
+            }
+        }
         #endregion
 
         #region Private Props
@@ -39,6 +51,7 @@ namespace BS.Ui
         private GameManager _gameManagerRef { get; set; } = null;
         private CalenderUiItem _calendarUiItem { get; set; } = null;
         private WalletUiItem _walletUiItem { get; set; } = null;
+        private GeneralButtonsUi _generalButtonsUi { get; set; } = null;
         #endregion
 
         #region Unity Mehtods
@@ -50,6 +63,7 @@ namespace BS.Ui
         {
             calendarUiItem.Init();
             walletUiItem.Init();
+            generalButtonsUi.Init();
         }
         #endregion
     }
