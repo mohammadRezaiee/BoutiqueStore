@@ -13,6 +13,7 @@ namespace BS.Manager
         [field: SerializeField, Header("Database : ")] public ClothInfoDatabase clothInfoDatabase { get; private set; } = null;
         [field: SerializeField] public UiDatabase uiDatabase { get; private set; } = null;
         [field: SerializeField, Header("Other : ")] public List<CursorInfoData> cursorInfoData { get; private set; } = new List<CursorInfoData>();
+        [field: SerializeField] public GameObject characterShowcaseUiPrefab { get; private set; } = null;
         #endregion
 
         #region Public Methods

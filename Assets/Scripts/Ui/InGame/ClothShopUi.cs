@@ -1,3 +1,4 @@
+using BS.Manager;
 using DG.Tweening;
 using System;
 using System.Collections;
@@ -14,16 +15,26 @@ namespace BS.Ui
 
         #region Private Serialize Fields
         [SerializeField] private List<GameObject> _canvasItemList;
+        [SerializeField] private RawImageUiItem _characterRawImageUiItem;
+        [SerializeField] private Transform _characterShowcaseParent;
         #endregion
 
         #region Private Props
+        private GameManager _gameManager => _gameManagerRef != null ? _gameManagerRef : (_gameManagerRef = GameManager.Instance);
+        private GameManager _gameManagerRef { get; set; } = null;
         private float _fadeTime { get; set; } = 1;
+        private CharacterShowcaseUi _characterShowcaseUi { get; set; } = null;
         #endregion
 
         #region Public Methods
         public void Init()
         {
             Activity(true);
+            GameObject prefab = _gameManager.databaseManger.characterShowcaseUiPrefab;
+            _characterShowcaseUi = Instantiate(prefab, _characterShowcaseParent).GetComponent<CharacterShowcaseUi>();
+            _characterShowcaseUi.Init();
+
+            _characterRawImageUiItem.SetCam(_characterShowcaseUi.cam);
             StartCoroutine("FadeInItems");
         }
 
@@ -33,6 +44,7 @@ namespace BS.Ui
         }
         public void OnClickCloseBtn()
         {
+            Destroy(_characterShowcaseUi.gameObject);
             StartCoroutine("FadeOutItems");
 
             onClickCloseBtnAct?.Invoke();

@@ -18,4 +18,5 @@ MonoBehaviour:
   <cursorInfoData>k__BackingField:
   - <name>k__BackingField: Hover
     <cursorType>k__BackingField: 0
-    <icon>k__BackingField: {fileID: 2800000, guid: e0f0822bb7626b64db56331ef9f40854, type: 3}
+    <icon>k__BackingField: {fileID: 2800000, guid: b8fd38c7736f53048aa02c6becbd631d, type: 3}
+  <characterShowcaseUiPrefab>k__BackingField: {fileID: 5203239679429918770, guid: 8dea46bd76fd6ab4390b9bd610e85ce6, type: 3}
